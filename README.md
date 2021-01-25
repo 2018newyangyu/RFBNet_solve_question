@@ -49,5 +49,5 @@ def cpu_nms(dets, thresh):
             inter = w * h
             ovr = inter / (iarea + areas[j] - inter)
             if ovr >= thresh:
-              suppressed[j] = 1
-  return keep
+                suppressed[j] = 1
+    return keep
